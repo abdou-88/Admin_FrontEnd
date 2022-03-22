@@ -150,7 +150,9 @@ const Dashboard = () => {
     useEffect(() => {
         fetchOrders();
         fetchReviews();
-    }, [version]); // eslint-disable-line react-hooks/exhaustive-deps
+        // eslint-disable-line react-hooks/exhaustive-deps
+
+    }, [version]); 
 
     const {
         nbNewOrders,
